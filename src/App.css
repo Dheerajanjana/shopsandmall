@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+body{
+  font-family: 'Mukta', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+  height: 200vh;
+  
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  resize:none ;
+  }
+  :root{
+    --color-prinary:#7971ea;
+    --color-secondary:#6610f2;
+    --color-bg:#fff;
+    --color-light:#8c92a8;
+    --color-text:#f3090911;
+    --shadow: 0 2px 8px rgba(0,0,0,.4);
+    --linear-gradient: linear-gradient(90deg, #6610f2, #7971ea);
+    --transition: all , 4s ease ;
+
+
+    --width-lg:80%;
+    --width-md:90%;
+    --width-sm:95%;
+}
+::-webkit-scrollbar{
+  height: .5rem;
+  width: .5rem;
+}
+::-webkit-scrollbar-track{
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--linear-gradient);
+}
+img{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  
+}
+a{
+  color: var(--color-text);
+}
+span{
+  font-size: 1rem;
+}
+h1,h2,h3,h4{
+  line-height: 1.2;
+}
+h1{
+  font-size: 2.8rem;
+}
+h2{
+  font-size: 2rem;
+  
+}
+h3{
+  font-size: 1.6rem;
+}
+h4{
+  font-size: 1.3rem;
+}h5{
+  font-size: 3rem;
+}
+.container{
+  margin: 0 auto;
+  width: var(--width-lg);
+}
+section h2{
+  padding: 6rem 0 0;
+}
+.btn{
+  display: inline-block;
+  background: var(--linear-gradient);
+  width: 11rem;
+  padding: 1rem;
+  border-radius: 5rem;
+  color: var(--color-bg);
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size:.8rem;
+  letter-spacing: .1rem;
+  transition: var(--transition);
+}
+.btn:hover{
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+.title{
+  text-align: center;
+}
+.title h2 {
+  display: inline-block;
+  position: relative;
+ 
+}
+.show{
+  display: block !important;
+}
+.title h2::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -3rem;
+  height: .2rem;
+  width: 2rem;
+  background: var(--color-secondary);
+}
+.title h2::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -3rem;
+  height: .2rem;
+  width: 2rem;
+  background: var(--color-secondary);
+}
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

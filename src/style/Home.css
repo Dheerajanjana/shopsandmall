@@ -1,0 +1,20 @@
+.home{
+    background: url(https://cdn.pixabay.com/photo/2017/06/20/22/14/shoes-2425122_1280.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--color-bg);
+    position: relative;
+
+}
+.home-container{
+    position: absolute;
+    top: 0;
+    right: 8rem;
+    transform: translate(0,50%);
+    max-width: 500px;
+}
+.home-container p{
+    text-shadow: var(--shadow);
+    padding: 1rem 0;
+}
